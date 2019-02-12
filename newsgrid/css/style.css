@@ -151,10 +151,18 @@ h1, h2, h3, h4, h5, h6 {
 .p-2 { padding: 2rem }
 .p-3 { padding: 3rem }
 
+.l-heading {
+  font-size: 3rem;
+}
+
 .list li {
   padding: .5rem 0;
   border-bottom: 1px dotted #555;
   width: 90%;
+}
+
+.list a:hover {
+  color: var(--primary-color);
 }
 
 /* Inner page grid container */
@@ -274,6 +282,22 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 1rem 0.5rem;
+}
+
+#article .meta .category {
+  margin-bottom: 0;
+}
+
+#article small {
+  display: block;
 }
 
 /* Footer */
