@@ -103,6 +103,11 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--secondary-color);
 }
 
+.btn-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
 .btn-block {
   display: block;
   width: 100%;
@@ -118,17 +123,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem;
 }
 
-.bg-dark,
-.bg-dark a,
-.bg-dark h2,
 .bg-dark  {
   background: var(--dark-color);
   color: #fff;
 }
 
-.bg-primary,
-.bg-primary a {
+.bg-primary {
   background: var(--primary-color);
+  color: #fff;
+}
+.bg-dark a,
+.bg-dark h2,
+.bg-primary a {
   color: #fff;
 }
 
@@ -149,6 +155,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: .5rem 0;
   border-bottom: 1px dotted #555;
   width: 90%;
+}
+
+/* Inner page grid container */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
 }
 
 /* Navigation */
